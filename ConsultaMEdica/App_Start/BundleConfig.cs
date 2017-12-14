@@ -20,11 +20,23 @@ namespace ConsultaMEdica
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
+                      "~/Content/js/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/cube").Include(
+                      "~/Content/js/jquery.nanoscroller.min.js",
+                      "~/Content/js/demo.js",
+                      "~/Content/js/scripts.js",
+                      "~/Content/js/pace.min.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/css/bootstrap/bootstrap.min.css",
+                      "~/Content/css/libs/font-awesome.css",
+                      "~/Content/css/libs/nanoscroller.css",
+                      "~/Content/css/compiled/theme_styles.css",
+                      "~/Content/css/libs/jquery-jvectormap-1.2.2.css",
+                      "~/Content/css/libs/weather-icons.css",
+                      "~/Content/css/libs/daterangepicker.css",
                       "~/Content/site.css"));
         }
     }
